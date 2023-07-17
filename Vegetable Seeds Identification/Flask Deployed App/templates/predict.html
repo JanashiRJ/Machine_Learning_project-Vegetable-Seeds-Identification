@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Prediction Results</title>
+    <style>
+        body {
+            background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(204, 204, 204, 0.8) 100%), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUoDKbenbvtCSr2MSh1hZSVaVaqOYJAQ_1Hw&usqp=CAU');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .prediction-box {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: rgb(176, 175, 175);
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: black; font-weight:bold; align-items:center; font-size: 70; margin-left: 580px;">Vegetable Seeds Prediction</h1>
+    <div class="prediction-box">
+        <p style="color: black; font-size: 50">Predicted Seed: {{ predicted_seed }}</p>
+    </div>
+    <h3 style="color: black; font-size: 50; align-items: center; margin-left: 500px; margin-top: 50px;">The image related to vegetable seeds that you selected was identified as {{ predicted_seed }}</h3>
+</body>
+</html>

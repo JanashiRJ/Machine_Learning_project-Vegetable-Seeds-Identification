@@ -1,0 +1,98 @@
+<html>
+{% extends 'base.html' %}
+{% block pagetitle %}
+AI Engine
+{% endblock pagetitle %}
+
+{% block body %}
+<div>
+    <div class="container">
+        <div class="row mb-5 text-center text-white">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>Machine Learning Engine</b></h1>
+                <p class="lead" style="font-weight: 500;color: black;">This webapp help you to detect the vegetable seeds related to different vegetable categories..</p>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg" style="height: 95%; color:brown;"><img
+                        src="https://cdn.24.co.za/files/Cms/General/d/2511/431028d0ae2a462c8f80afadaf744e49.jpg"
+                        height="200" alt="" width="200" class="d-block mx-auto mb-4 rounded-pill">
+
+                        <form method="POST" action="/predict" enctype="multipart/form-data" >
+                            <input type="file" name="image" id="imageUpload" accept="image/*" onchange="previewImage(event)" style="margin-left: 500px;">
+                            <br>
+                            <img id="preview" src="#" alt="Image Preview" style="display: none; max-width: 256px; max-height: 256px; margin-left: 500px; " >
+                            <br>
+                            <input type="submit" value="Predict" style="margin-left: 550px; background-color: rgb(166, 227, 166);">
+                        </form>
+                        <script>
+                            function previewImage(event) {
+                                var preview = document.getElementById('preview');
+                                preview.style.display = "block";
+                                preview.src = URL.createObjectURL(event.target.files[0]);
+                            }
+                        </script>
+
+                    <!-- End -->
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;">
+
+                    <h5><b>Why should you necessary to detect the vegetable seeds?</b></h5>
+                    <p>Vegetable seed identification refers to the process of correctly recognizing and categorizing different types of seeds belonging to various vegetable species.
+                        Dentifying the seeds of different vegetable categories allows us to classify and differentiate between various types of vegetables 
+                       It involves examining the physical characteristics, size, shape, color, texture, and other distinguishing features of the seeds to determine their identity.
+                       
+                    </p>
+                    <p>Accurate identification of vegetable seeds is crucial for successful planting and cultivation. 
+                    Idifferent vegetable seeds have specific requirements for optimal growth, including soil type, water needs, temperature, and sunlight exposure. 
+                    By correctly identifying the seeds, farmers and gardeners can provide the appropriate conditions and care necessary for the seeds to germinate and develop into healthy plants.</p>
+                    <p>
+                    Vegetable seed identification helps in crop rotation and planning. 
+                    Rotating crops helps prevent the buildup of pests and diseases, improves soil fertility, and reduces the need for chemical inputs. 
+                    By identifying the seeds, farmers can plan their crop rotation cycles effectively and make informed decisions about which vegetables to grow in different seasons or areas of their farms.
+                    </p>
+                    <img
+                        src="https://www.nicepng.com/png/detail/259-2595653_go-to-image-fruits-and-vegetables-png.png"
+                        height="300" alt="" width="550" style="margin-left: 300px;" >
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;">
+                    <h5><b>How To Choose the Right Vegetable Seeds for Your Garden</b></h5>
+                    <p>Having a healthy, plentiful vegetable garden can be a truly rewarding experience. 
+                       Depending on the climate where you live, your soil’s mineral content and a variety of other factors such as average rainfall and how much sun your garden gets will all determine the best vegetable seeds for your garden.</p>
+                    <ol>
+                        <li>Best vegetable seeds in the rainy seasons are Tomatoes, Radish, Beans, Eggplant,Cucumber, Papper, Bottle Gourd, Bitter Gourd.</li>
+                        <li>Best vegetable seeds in the summer reason are Eggplant, Beetroot, Cucumber, Bottle Gourd, Okra, Green Chiles, Pumpkin.</li>
+                        <li>Best vegetable seed in the winter season are Lettuce, Radish, Carrots, Onions, Green Peas, Kale.</li>
+                    </ol>
+
+                    <img
+                    src="https://www.lovethegarden.com/sites/default/files/styles/large/public/content/articles/UK_advice-gardening-grow-your-own-when-grow-vegetables_main.jpg?itok=MwHE0PPC"
+                    height="200" alt="" width="350" style="margin-left: 250px;" >
+                    <a target="_blank" href="https://www.ceylonagri.lk/vegetable-seeds-are-now-available-ceylonagri-lk/"
+                    class="mx-2"><button type="button"  style="background-color: rgb(145, 190, 145); width: 150; height: 50; font-size: 20px; border-radius: 5px; margin-left: 50px;" >More info</button></a>
+                    
+                </div>
+            </div>
+    </div>
+    </div>
+</div>
+
+<script>
+    const actualBtn = document.getElementById('actual-btn');
+
+    const fileChosen = document.getElementById('file-chosen');
+
+    actualBtn.addEventListener('change', function () {
+        fileChosen.textContent = this.files[0].name
+    })
+</script>
+
+{% endblock body %}

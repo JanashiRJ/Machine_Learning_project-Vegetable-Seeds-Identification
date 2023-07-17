@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Plant Disease Detection
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+  }
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+  }
+</style>
+<div class='mobile p-5'>
+  <div class="row mb-5 text-center text-white">
+    <div class="col-lg-10 mx-auto">
+      <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color:red;"><b>Note✍🏻</b></h1>
+      <p class="lead" style="font-weight: 500;color: black;">Please🙏 Open This Site On Laptop/PC 💻 Screen Only</p>
+      <p class="lead" style="font-weight: 500;color: black;">Thank You 🤝</p>    
+    </div>
+</div>
+</div>
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(0, 0, 0); margin-top: 170px;"><b>Vegetable Seeds Detection </b></h1>
+        <p class="lead" style="font-weight: 500;color: rgb(0, 0, 0); margin-top: 50px;"><b>This Website Will Help you To Detect any vegetable seeds with the information.</b></p>
+        <p class="lead" style="font-weight: 500;color: rgb(0, 0, 0);"><b>Try to identify your vegetable seeds..</b></p>
+    </div>
+</div>
+
+<center class="laptop">
+    <a href="/index">
+    <button class = "bttn-pill bttn-lg btn-success"><b style="color: black; margin-top: 30px; ">Try to Detect Seeds</b></button>
+</a>
+</center>
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%; margin-top: 100px;">
+          <img src="https://static-01.daraz.lk/p/6dfd2c6f210c92fe24cd7768c1441c97.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black; margin-top: 50px;">Brinjall</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%; margin-top: 100px;">
+
+          <img src="https://rukminim1.flixcart.com/image/850/1000/kgb5rbk0/plant-seed/8/d/h/100-carrot-seeds-gajar-ke-beej-organic-herbs-original-imafwkvrbrhmeeyu.jpeg?q=90" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black; margin-top: 50px;">Carrot</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%; margin-top: 100px;">
+
+          <img src="https://images.immediate.co.uk/production/volatile/sites/30/2023/03/Bowl-of-pumpkin-seeds-b4a5510.jpg?quality=90&resize=440,400" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black; margin-top: 50px;">Pumking</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%; margin-top: 100px;">
+
+          <img src="https://static-01.daraz.lk/p/mdc/681a4ec10dce48583ba28878cb765b35.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black; margin-top: 50px;">Beans</p></center>
+        </div>
+    </div>
+</div>
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%; margin-top: 60px;">
+          <img src="https://welldales.co.uk/wp-content/uploads/2020/12/cucumber-large-long-giant-xl-seeds-garden-uk-grow-british-beth-alpha-marketmore-feature.png" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black; margin-top: 50px;">Cucumber</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%; margin-top: 60px;">
+
+          <img src="https://cdn.shopify.com/s/files/1/0603/6049/1193/products/bittergourdseeds_14.jpg?v=1677119174" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black; margin-top: 50px;">Bitter Gourd</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%; margin-top: 60px;">
+
+          <img src="https://5.imimg.com/data5/DM/DK/ZM/SELLER-31351244/ladies-finger-seeds.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black; margin-top: 50px;">Ladies Fingers</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%; margin-top: 60px;">
+
+          <img src="https://www.nativityseeds.com/media/catalog/product/cache/37e22106bf8bd6c2aeeda263b9ee481e/m/i/miyashige-white-daikon-radish-seedsL2zX.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black; margin-top: 50px;">Radish</p></center>
+        </div>
+    </div>
+</div>
+</div>
+</center>
+
+{% endblock body %}
